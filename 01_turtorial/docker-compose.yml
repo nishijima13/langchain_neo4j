@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  neo4j:
+    platform: linux/x86_64
+    build: ./neo4j_docker
+    container_name: neo4j_docker
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - ./neo4j/data:/data
+
+  python:
+    platform: linux/x86_64
+    build: ./python_docker
+    container_name: python_docker
+    tty: true
+    volumes:
+      - ./src:/src
+  
