@@ -49,3 +49,10 @@ Full Context:
 > Finished chain.
 Tom Cruise, Val Kilmer, Anthony Edwards, and Meg Ryan played in Top Gun.
 ```
+
+Neo4jのWeb画面で以下を実行すると、グラフ内容が確認できる。  
+```cypher
+MATCH (n) RETURN n LIMIT 25
+```  
+
+![Neo4j画像](images/neo4j.png)
