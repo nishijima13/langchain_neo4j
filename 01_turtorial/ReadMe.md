@@ -8,6 +8,7 @@ https://python.langchain.com/docs/use_cases/graph/graph_cypher_qa/
 Dockerコンテナを起動する。  
 ```bash
 cd 01_turtorial
+docker-compose build
 docker-compose up -d
 ```
 
